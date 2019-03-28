@@ -1,0 +1,148 @@
+@import '@/qunar/reset.scss';
+.bd-color{background-color: #ececea;width: 100%;height: 1300px;}
+// .c-left{float: left;}
+.ant-tabs .ant-tabs-left-bar .ant-tabs-tab{text-align:left!important;
+    width: 228px; background-color: #ffffff;}
+
+.ant-tabs .ant-tabs-left-bar .ant-tabs-ink-bar{left: 1px!important;width:5px!important;}
+.ant-tabs-nav .ant-tabs-tab-active{color: red!important;}
+.ant-tabs-ink-bar{background-color: red!important;}
+.ant-tabs-nav .ant-tabs-tab:hover{color: red!important;}
+.kkk{font:700 15px/55px "";}
+.ant-tabs .ant-tabs-left-bar .ant-tabs-tab, .ant-tabs .ant-tabs-right-bar .ant-tabs-tab {margin-bottom:3px!important;} 
+
+// .svg{width: 18px;height:18px;border-radius: 50%;background-color: blue;display:inline-block;}
+.c-right{width: 930px;}
+
+.c-right .c-r-1{width:950px ;height: 150px;background-color: #ffffff;}
+.c-right .c-r-1 img{width:120px ;height: 120px;border-radius: 50%;overflow: hidden;float: left;
+  margin: 20px 0 0 20px;display: inline-block;}
+// .c-right .c-r-1:hover img{width: 300px;height: 300px;}
+.c-right .c-r-1 .abox{float: left;width: 200px;margin-top: 30px;}
+.c-right .c-r-1 .bbox{float: left;width: 600px;margin-top:30px;}
+.c-right .c-r-1 .bbox .xian{width: 580px;height: 10px;background-color: #c2c2c5;border-radius: 100px;}
+
+.info{width: 100px;}
+.sp2{display:inline-block;margin-left:5px;width:16px;height:15px;vertical-align:middle; 
+  background: url(//js02.daoju.qq.com/common/images/icon.png) no-repeat; background-position: -52px -473px;}
+
+.ico_mobile{display:inline-block;margin-left:5px;width:16px;height:15px;vertical-align:middle; 
+  background: url(//js02.daoju.qq.com/common/images/icon.png) no-repeat; background-position: 0 0;}
+
+.person{width: 950px;height: 35px;background-color: #c2c2c5;font: 14px/35px "";padding-left: 20px;}
+.member{font-size: 14px;}
+.member .vip0{margin-left: 10px;}
+.member .vip1{margin-left: 35px;}
+.member .vip2{margin-left: 50px;}
+.member .vip3{margin-left: 120px;}
+strong{color: red;margin-left: 10px;}
+
+.p3{margin:0;}
+.c-r-2{
+  width:950px ;height: 150px;margin-top: 20px;
+}
+.c-r-2 .games1{
+  width:324px ;height: 150px;float: left;background-color: #ffffff;overflow: hidden;
+}
+.c-r-2 .games1 .games1-1{border-bottom: 1px solid #c2c2c5;height: 40px;font: 14px/40px "";padding-left: 20px;}
+.c-r-2 .games1 .games1-2{width:100%;height:100%;
+  background-color: #ffffff;text-align: center;font:14px/110px "";}
+.c-r-2 .games2{
+  width:600px ;height: 150px;float: left;margin-left: 20px;background-color: #ffffff;overflow: hidden;
+}
+.c-r-2 .games2 .games2-1{border-bottom: 1px solid #c2c2c5;height: 40px;font: 15px/40px "";padding-left: 20px;}
+.c-r-2 .games2 .games2-2{width:100%;height:100%;
+  background-color: #ffffff;text-align: center;font:15px/110px "";}
+
+.c-r-3 .benyv{height: 46px;width:950px ; margin: 20px 0;padding-left: 20px;
+  background: #fffaeb;
+  border: 1px solid #f6ecca;}
+.c-r-3 .benyv .benyv-1{color:red;font: 15px/46px "";}
+.c-r-3 .benyv .benyv-2{color:red;font: 18px/46px "";}
+.c-r-3 .benyv .benyv-3{color:red;font: 18px/46px "";margin-left: 5px;}
+
+.c-r-4{height: 250px;width:950px ;background-color: #ffffff;font: 15px/40px "";padding:0 20px;margin-bottom: 20px;}
+.c-r-4 .myte{border-bottom: 1px solid #c2c2c5;height: 40px;width: 100%;}
+.c-r-4 .myte .myte-left{display:inline-block;width:70px;float: left;font:700 15px/40px "";border-bottom: 1px solid red;}
+.c-r-4 .myte .myte-right{display:inline-block;color:#0066ff;float: right;}
+.c-r-4 .myte .benyv-1{color:red;font: 15px/46px "";}
+.c-r-4 .myte2{height:170px;display: flex;justify-content:space-between;width: 890px;margin-top: 20px;}
+.c-r-4 .myte2 li{height:170px;width:224px;border:1px solid #c2c2c5;position: relative;}
+.c-r-4 .myte2 li.teee{border:0;}
+.c-r-4 .myte2 li p{position: absolute;top:120px;left:70px;}
+.c-r-4 .myte2 li .pte{position: absolute;top:145px;left:55px;}
+.c-r-4 .myte2 li i{width: 90px;height: 80px;display:block;margin:45px auto; background: url(//js02.daoju.qq.com/common/images/mall/xyicon.png) no-repeat;}
+.c-r-4 .myte2 li .i11{ background-position: -135px -154px;}
+.c-r-4 .myte2 li .i21{ background-position: -358px -158px;}
+.c-r-4 .myte2 li .i31{ background-position: -585px -156px;}
+.c-r-4 .myte2 li .i41{ background-position: -818px -154px;}
+
+.c-r-4 .myte2 li:hover .i11{background-position: -135px -264px;}
+.c-r-4 .myte2 li:hover .i21{background-position: -358px -264px;}
+.c-r-4 .myte2 li:hover .i31{background-position: -585px -264px;}
+.c-r-4 .myte2 li:hover .i41{background-position: -818px -264px;}
+
+.c-r-4 .myte2 li .ibb{width: 105px; height: 110px;}
+.c-r-4 .myte2 li .ibc1{ background-position: -135px -379px;}
+.c-r-4 .myte2 li .ibc2{ background-position: -316px -379px;}
+.c-r-4 .myte2 li .ibc3{ background-position: -500px -379px;}
+.c-r-4 .myte2 li .ibc4{ background-position: -679px -379px;}
+.c-r-4 .myte2 li .ibc5{ background-position: -863px -379px;}
+
+.c-r-4 .myte2 li:hover .ibc1{ background-position: -135px -522px;}
+.c-r-4 .myte2 li:hover .ibc2{ background-position: -316px -522px;}
+.c-r-4 .myte2 li:hover .ibc3{ background-position: -500px -522px;}
+.c-r-4 .myte2 li:hover .ibc4{ background-position: -679px -522px;}
+.c-r-4 .myte2 li:hover .ibc5{ background-position: -863px -522px;}
+
+.c-r-4 .myte2 .tetuu{width: 160px;}
+.c-r-4 .myte2 .tetuu img{width: 160px;}
+
+.orderList {
+  @include border(1px 1px 1px 1px, #e5e5e5, solid);
+  @include padding(0.3rem 0.3rem);
+  li {
+    img {
+      @include rect(1.1rem, auto);
+    }
+    @include text-align();
+    @include line-height(1rem);
+  }
+}
+.zong {
+  @include rect(100%, auto);
+  @include background-color(#fff);
+  @include line-height(0.2rem);
+  @include font-size(0.16rem);
+  @include padding(0.2rem);
+  p {
+    @include rect(100%, 0.3rem);
+  }
+
+}
+.address {
+  @include rect(100%, auto);
+  @include padding(0.2rem);
+  @include line-height(0.3rem);
+  @include color(#333);
+  
+  .addre {
+    h3 {
+      @include line-height(0.5rem);
+      @include background-color(#fff);
+      @include font-size(0.2rem);
+      @include padding(0.1rem);
+      @include border(0 0 5px 0,#f5f5f5,solid);
+    }
+  }
+  .addlist {  
+    @include background-color(#fff);
+    @include margin(0.1rem 0);
+    @include padding(0.1rem);
+    @include font-size(0.14rem);
+    @include line-height(0.2rem);
+    p {
+      @include rect(100%, 0.3rem);
+    }
+  }
+}

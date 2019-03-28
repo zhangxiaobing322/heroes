@@ -1,0 +1,131 @@
+@import '@/qunar/reset.scss';
+
+.cart_list {
+    @include rect(1190px, auto);
+    margin: 0 auto;
+    @include background-color(#fafbfc);
+    @include margin-top(20px);
+    h3 {
+        @include font-size(14px);
+        @include font-weight(900);
+        @include rect(1146px, 41px);
+        @include line-height(41px);
+        border-bottom: 1px solid #ddd;
+        @include margin-left(22px);
+    }
+    .playInfor {
+        @include rect(1143px, 100px);
+        @include margin-left(22px);
+        .selectbox {
+            @include margin-top(20px);
+            @include margin-left(40px);
+        }
+    }
+    .tablebox {
+        @include margin-left(22px);
+        @include rect(1143px, auto);
+        @include background-color(#f3f4f6);
+        @include text-align();
+        border-radius: 5px 5px 5px 5px;
+        tr {
+            border-bottom: 1px dotted #DEDFDE;
+            @include rect(auto, 35px);
+            @include margin-top(5px);
+            td {
+                img {
+                    @include rect(39px, 28px);
+                    @include background-color(red);
+                }
+                .input {
+                    @include rect(30px,100%);
+                    @include text-align();
+                }
+                .button {
+                    @include rect(20px, 100%);
+                }
+            }
+        }
+    }
+    p {
+        @include rect(100%, 50px);
+        @include line-height(50px);
+        @include margin-left(22px);
+        @include font-size(12px);
+        span {
+            @include margin-left(20px);
+            @include display(inline-block);
+            @include color(blue);
+        }
+    }
+    .cart_t1 {
+        @include rect(1150px, 58px);
+        @include margin-left(22px);
+        @include background-color(#fffeee);
+        border:1px solid #c9c9c9;
+        span {
+            @include line-height(58px);
+            @include color(red);
+            @include font-size(12px);
+            @include font-weight(900);
+            @include margin-left(20px);
+        }
+        a {
+            @include font-size(12px);
+            @include color(black);
+        }
+        span:nth-child(4) {
+            @include float(right);
+            @include font-size(14px);
+            @include font-weight(700);
+            @include margin-right(20px);
+            @include color(black);
+            span {
+                @include font-size(26px);
+                @include font-weight(bold);
+            }
+        }
+        button {
+            @include float(right);
+            @include rect(120px, 57px);
+            border:0px;
+            @include background-color(#f66);
+            span {
+                @include color(white);
+                @include font-size(20px);
+                @include font-weight(900);
+                @include margin-left(0);
+            }
+        }
+    }
+    h3:nth-child(6) {
+        @include margin-top(50px);
+    }
+    p:nth-child(7) {
+        @include rect(100%, 20px);
+        @include margin-top(10px);
+        @include line-height(5px);
+        @include font-size(14px);
+        @include color(red);
+    }
+    p:nth-child(8) {
+        @include rect(100%, 20px);
+        @include margin-top(20px);
+        @include line-height(5px);
+        @include font-size(14px);
+        @include color(black);
+    }
+    p:nth-child(9) {
+        @include rect(100%, 20px);
+        @include margin-top(20px);
+        @include line-height(5px);
+        @include font-size(14px);
+        @include color(black);
+    }
+    p:nth-child(10) {
+        @include rect(100%, 20px);
+        @include margin-top(20px);
+        @include line-height(5px);
+        @include font-size(14px);
+        @include color(black);
+    }
+}

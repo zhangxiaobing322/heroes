@@ -1,0 +1,863 @@
+@import '@/qunar/reset.scss';
+
+.contenter {
+    @include rect(100%, 3000px);
+    background: #f3f4f6 url(//js01.daoju.qq.com/mall/images/channelmall/lol/bg-index.jpg) no-repeat top center;
+    .content {
+        background: #f3f4f6 url(//js01.daoju.qq.com/mall/images/channelmall/lol/cont-index.jpg) no-repeat;
+        @include rect(1190px, auto);
+        margin: 0 auto;
+        .header_menu {
+            @include rect(100%, 250px);
+            .nav_color {
+                @include color(#9f9f9f);
+                li a:hover{
+                    @include color(white);
+                }
+            }
+            .header_menu_nav {
+                @include rect(100%, 30px);
+                overflow: hidden;
+                ul {
+                    @include flexbox();
+                    @include flex-direction();
+                    margin-bottom: 0;
+                    li {
+                        @include margin-right(10px);
+                        @include margin-left(10px);
+                        @include text-align();
+                        @include font-size(12px);
+                        @include line-height(31px);
+                        @include color(#9f9f9f);
+                    }
+                    i {
+                        @include display(inline-block);
+                        @include line-height(31px);
+                        @include font-size(10px);
+                    }
+                }
+                .header_menu_right {
+                    @include flexbox();
+                    @include flex-direction();
+                    @include float(right);
+                    li {
+                        a {
+                            @include color(#9f9f9f);
+                        }
+                        span {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .header_search {
+                @include rect(100%, 96px);
+                opacity: 0.7;
+                background-color: rgb(60,62,73);
+                ul {
+                    margin-bottom: 0;
+                    @include rect(100%, 97px);
+                    @include flexbox();
+                    @include flex-direction();
+                    @include justify-content(space-between);
+                    @include align-items();
+                    @include flexbox();
+                    .header_search_logo_1 {
+                        @include rect(280px,55px);
+                        background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                        background-position: -670px -5px;
+                    }
+                    .header_search_search {
+                        @include rect(500px, 51px);
+                        .header_search_search_input {
+                            @include rect(450px, 46px);
+                            background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                            background-position: -999px 0;
+                            @include float(left);
+                            input {
+                                @include rect(450px, 46px);
+                                padding-left: 10px;
+                                opacity: 0.4;
+                            }
+                            ul {
+                                @include rect(100%, auto);
+                                border: 1px solid #434751;
+                                @include flexbox();
+                                @include flex-direction(column);
+                                li {
+                                    z-index: 100;
+                                    @include rect(100%, 30px);
+                                    @include background-color(black);
+                                    @include line-height(30px);
+                                    opacity: 0.6;
+                                    a {
+                                        @include display(inline-block);
+                                        @include rect(80%, 30px);
+                                        @include margin-left(10px);
+                                        @include color(#9e9e9e);
+                                        @include font-size(12px);
+                                        opacity: 1;
+                                        cursor: pointer;
+                                    }
+                                    a:hover {
+                                        @include color(#c8d3d3);
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            .header_search_search_btn {
+                                @include rect(49px, 46px);
+                                background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                                background-position: -1558px 0;
+                                @include float(right);
+                            }
+                        }
+                    }
+                    .header_search_logo_2 {
+                        @include rect(223px,59px);
+                        background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                        background-position: -437px -5px;
+                    }
+                }
+            }
+            .header_menu_choose {
+                @include rect(100%, 76px);
+                background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/navico.png) no-repeat;
+                background-position: -5px -187px;
+                ul {
+                    @include rect(940px, 76px);
+                    @include flexbox();
+                    @include float(left);
+                    margin-bottom: 0;
+                    li {
+                        @include flex();
+                        @include text-align();
+                        @include line-height(76px);
+                        @include font-size(18px);
+                        @include color(#9f9f9f);
+                        a {
+                            @include color(#9f9f9f);
+                        }
+                        a:hover {
+                            @include color(red);
+                        }
+                    }
+                    li:hover {
+                        @include color(red);
+                    }
+                    .navActive {
+                        @include rect(134px,76px);
+                        @include color(white);
+                        background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/navico.png) no-repeat;
+                        background-position: -275px -5px;
+                    }
+                    .navActive:hover {
+                        @include color(white);
+                    }
+                }
+                a {
+                    .header_menu_cart {
+                        @include rect(192px,76px);
+                        @include text-align();
+                        @include line-height(76px);
+                        @include font-size(18px);
+                        @include color(red);
+                        @include float(right);
+                    }
+                }
+            }
+            .header_menu_kind {
+                @include rect(100%, 48px);
+                @include color(#9f9f9f); 
+                @include flexbox();
+                @include flex-direction();
+                background-color: rgb(52,55,60);
+               a {
+                .header_menu_kind_all {
+                    @include color(#9f9f9f); 
+                    @include rect(152px, 48px);
+                    @include line-height(48px);
+                    background-color: rgb(73,78,84); 
+                    @include text-align();
+                }
+               }
+                .header_menu_kind_all:hover {
+                    @include color(white);
+                }
+                .header_menu_kind_shop {
+                    @include rect(708px, 48px);
+                    ul {
+                        @include rect(100%, 48px);
+                        @include flexbox();
+                        @include flex-direction();
+                        li {
+                            @include flex();
+                            @include text-align();
+                            @include line-height(48px);
+                            a {
+                                @include color(#9f9f9f);
+                            }
+        
+                        }
+                        li:hover {
+                            @include color(white);
+                        }
+                    }
+                }
+            }
+        }
+        .content_content {
+            @include rect(100%, 371px);
+            @include flexbox();
+            @include flex-direction();
+            @include justify-content(space-between);
+            .content_left {
+                @include rect(222px, 371px);
+                @include flexbox();
+                @include flex-direction(column);
+                @include background-color(white);
+                float: left;
+                .loginbox {
+                    @include rect(222px, 226px);
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items();
+                    .login {
+                        @include rect(220px, 90px);
+                        @include flexbox();
+                        @include align-items();
+                        img {
+                            @include rect(46px, 46px);
+                            @include border-radius(50%);
+                            @include margin-left(5%);
+                        }
+                        p {
+                            @include margin-left(10px);
+                            @include margin-top(10px);
+                            @include font-size(12px);
+                            @include rect(140px, auto)
+                        }
+                    }
+                    .role {
+                        @include margin-top(3px);
+                        @include rect(202px, 65px);
+                        @include background-color(#f3f4f6);
+                        p {
+                            @include font-size(12px);
+                            @include margin-top(10px);
+                            @include margin-left(10px);
+                        }
+                        p:nth-child(2) {
+                            cursor: pointer;
+                            @include font-size(12px);
+                            @include color(blue);
+                            @include float(right);
+                        }
+                        a {
+                            @include font-size(12px);
+                            @include float(right);
+                        }
+                    }
+                    .balance {
+                        @include rect(220px, 65px);
+                        ul {
+                            @include rect(90%, 65px);
+                            @include margin-left(5%);
+                            li {
+                                i {
+                                    @include display(inline-block);
+                                    @include rect(25px, auto);
+                                }
+                                a {
+                                    @include color(black);
+                                }
+                            a:hover {
+                                @include color(#2bc704);
+                                border-bottom:1px solid #2bc704;
+                            }
+                            }
+                        }
+                    }
+                }
+                .notice_list {
+                    @include rect(222px, 145px);
+                    .notice_list_header {
+                        @include rect(90%, 30px);
+                        border-bottom: 1px solid #ececec;
+                        @include margin-left(5%);
+                        h2 {
+                            font-weight: 900;
+                            @include float(left);
+                        }
+                        a {
+                            @include display(inline-block);
+                            @include font-size(12px);
+                            @include float(right);
+                        }
+                    }
+                    ul {
+                        @include rect(90%, auto);
+                        @include margin-left(5%);
+                        @include font-size(12px);
+                        @include color(#555);
+                        li {
+                            @include rect(100%, 23px);
+                            @include line-height(23px);
+                            a {
+                                @include color(black);
+                            }
+                            a:hover {
+                                border-bottom:1px solid black;
+                            }
+                        }
+                        span {
+                            @include display(inline-block);
+                            @include float(right);
+                        }
+                    }
+                }
+            }
+            .content_banner {
+                float: left;
+                @include rect(770px, 371px);
+                .swiper-container {
+                    @include rect(770px, 371px);
+                    .swiper-pagination-bullet {
+                        bottom: -15px;
+                        @include rect(25%, 45px);
+                        border-right: 1px solid white;
+                        @include border-radius(0);
+                        background: #e8e8e8;
+                        opacity: 1;
+                        @include line-height(45px);
+                        @include margin-left(0);
+                        @include margin-right(0);
+                    }
+                    .swiper-pagination-bullet-active {
+                        @include background-color(#36ab87);
+                    }
+                }
+            }
+            .content_right {
+                @include rect(187px, 371px);
+                @include flexbox();
+                @include flex-direction(column);
+                float: left;
+                .active_btn {
+                    @include rect(186px,83px);
+                    @include margin-top(1px);
+                    background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat;
+                    background-position: -6px -302px;
+                    @include color(#efd4c9);
+                    @include text-align();
+                    @include line-height(83px);
+                    @include font-size(22px);
+                    a {
+                        @include color(#efd4c9);
+                    }
+                }
+                .active_btn:hover {
+                    background-position: -5px -388px;
+                }
+                .qr_code {
+                    background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat;
+                    background-position: -5px -5px;
+                    @include rect(187px, 208px);
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items();
+                    @include justify-content();
+                    img {
+                        vertical-align: middle;
+                    }
+                    p {
+                        @include font-size(18px);
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .content_list {
+            @include rect(1190px, 2000px);
+            @include margin-top(30px);
+           .flash_buy {
+               @include rect(1190px, 520px);
+               background-color: rgb(250,251,252);
+               h3 {
+                margin-bottom: 0;
+                border-bottom: 2px solid #f3f4f6;
+                @include rect(1155px, 47px);
+                @include font-size(16px);
+                @include font-weight(bold);
+                @include color(#555);
+                @include margin-left(18px);
+                @include line-height(47px);
+                a {
+                    @include float(right);
+                    @include font-size(12px);
+                }
+                }
+                ul {
+                    @include rect(100%, 420px);
+                    @include margin-top(30px);
+                    @include flexbox();
+                    @include flex-direction();
+                    @include justify-content(space-around);
+                    
+                        li {
+                            background:(url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat);
+                            background-position: -190px -770px;
+                            @include rect(251px, 420px);
+                            @include flexbox();
+                            @include flex-direction(column);
+                            @include align-items();
+                            @include justify-content();
+                            .likediv {
+                                @include rect(251px, 351px);
+                                @include flexbox();
+                                @include flex-direction(column);
+                                @include justify-content();
+                                @include align-items();
+                                @include text-align();
+                                
+                                a {
+                                    img {
+                                        width: 180px;
+                                        height: 180px;
+                                    }
+                                }
+                                div:nth-child(2) {
+                                    @include rect(100%, 20px);
+                                    @include font-weight(bold);
+                                    @include color(black);
+                                }
+                                div:nth-child(5) {
+                                    @include rect(164px, 35px);
+                                    @include background-color(#ff5900);
+                                    border-bottom: 3px solid #e04e00;
+                                    @include color(#fff);
+                                    @include font-size(16px);
+                                    @include line-height(35px);
+                                }
+                                p:nth-child(3) {
+                                    @include rect(100%, 35px);
+                                    @include font-size(24px);
+                                    @include color(#ff5900);
+                                    @include font-weight(bold);
+                                    span {
+                                        @include font-size(14px);
+                                        @include color(black);
+                                        @include font-weight(400);
+                                    }
+                                }
+                                p:nth-child(4) {
+                                    @include rect(100%, 27px);
+                                    @include font-size(13px);
+                                    @include font-weight(bold);
+                                }
+                        }
+                    }
+                }
+           }
+           .hot_box {
+               @include margin-top(40px);
+               @include rect(1190px, 842px);
+               @include flexbox();
+               @include justify-content(space-between);
+               .hot_box_list {
+                   background-color: rgb(250,251,252);
+                   @include rect(952px, 842px);
+                   h3 {
+                    margin-bottom: 0;
+                    border-bottom: 2px solid #f3f4f6;
+                    @include rect(930px, 47px);
+                    @include font-size(16px);
+                    @include font-weight(bold);
+                    @include color(#b8b8b8);
+                    @include margin-left(18px);
+                    @include line-height(47px);
+                    div:nth-child(1) {
+                        @include rect(93px, 47px);
+                        @include font-size(18px);
+                        @include font-weight(bold);
+                        @include float(left);
+                        text-decoration: none;
+                        
+                        @include text-align();
+                    }
+                    div:nth-child(2) {
+                        @include rect(93px, 47px);
+                        @include font-size(18px);
+                        @include font-weight(bold);
+                        @include float(left);
+                        text-decoration: none;
+                        @include text-align();
+        
+                    }
+                    .like_active {
+                        border-bottom: 2px solid#36ab87;
+                        @include color(black);
+                    }
+                    a:nth-child(3) {
+                        @include float(right);
+                        @include font-size(12px);
+                    }
+                }
+                ul {
+                    @include text-align();
+                    @include margin-top(30px);
+                    @include rect(934px, 778px);
+                    @include flexbox();
+                    @include flex-wrap(wrap);
+                    @include justify-content(space-around);
+                    
+                        li {
+                            cursor: pointer;
+                            background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat;
+                            background-position: -237px -6px;
+                            @include rect(202px, 370px);
+                           .goods_detail {
+                            @include flexbox();
+                            @include flex-direction(column);
+                            @include justify-content(space-around);
+                            @include align-items();
+                            @include margin-top(20px);
+                               @include rect(202px, 340px);
+                               a { img {
+                                width: 140px;
+                                height: 180px;
+                                @include margin-top(10px);
+                            }}
+                            div:nth-child(2) {
+                                @include rect(200px, 20px);
+                            }
+                            .dis_list {
+                                @include rect(202px, 17px);
+                                span {
+                                    @include color(red);
+                                    @include font-weight(bold);
+                                    @include font-size(12px);
+                                }
+                            }
+                            div:nth-child(5) {
+                                @include rect(124px, 32px);
+                                background-color: rgb(54,171,135);
+                                margin-bottom: 10px;
+                                @include color(white);
+                                @include line-height(32px);
+                            }
+                           }
+                        }
+                        li:hover {
+                            background-position: -237px -385px;
+                        }
+                }
+               }
+               .hot_box_plate {
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(space-around);
+                @include rect(228px, 842px);
+                .hot_range {
+                    @include rect(228px, 415px);
+                    background-color: rgb(250,251,252);
+                    h3 {
+                        margin-bottom: 0;
+                        border-bottom: 2px solid #f3f4f6;
+                        @include rect(100%, 47px);
+                        @include line-height(47px);
+                        span {
+                            @include text-align();
+                            border-bottom: 2px solid#36ab87;
+                            @include display(inline-block);
+                            @include rect(80px, 47px);
+                            @include font-size(16px);
+                            @include font-weight(bold);
+                            @include color(#555);
+                            @include margin-left(18px);
+        
+                        }
+                    }
+                    ul {
+                        @include rect(196x, 359px);
+                        @include margin-left(18px);
+                        a {
+                            @include color(black);
+                            li {
+                            @include rect(196px, 90px);
+                            @include flexbox();
+                            @include justify-content(space-between);
+                            @include align-items();
+                            cursor: pointer;
+                            img {
+                                @include rect(76px, 54px);
+                            }
+                            .imginfo {
+                                @include rect(108px, 73px);
+                                @include font-size(12px);
+                                p:nth-child(1) {
+                                    @include margin-top(5px);
+                                    @include rect(108px, 14px);
+                                    @include font-weight(900);
+                                }
+                                p:nth-child(2) {
+                                    @include rect(108px, 15px);
+                                    margin-bottom: 0;
+                                }
+                                p:nth-child(3) {
+                                    @include rect(108px, 33px);
+                                    span {
+                                        @include font-weight(900);
+                                    }
+                                }
+                            }
+                        }
+                        li:hover{
+                            p:nth-child(1) {
+                                @include color(#36ab87);
+                            }
+                            p:nth-child(3) {
+                                @include color(red);
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+           }
+           .supershop {
+               @include margin-top(30px);
+                @include rect(1190px, 376px);
+                background-color: rgb(250,251,252);
+                h3 {
+                margin-bottom: 0;
+                border-bottom: 2px solid #f3f4f6;
+                @include rect(1155px, 47px);
+                @include line-height(47px);
+                span {
+                    @include text-align();
+                    border-bottom: 2px solid#36ab87;
+                    @include display(inline-block);
+                    @include rect(80px, 47px);
+                    @include font-size(16px);
+                    @include font-weight(bold);
+                    @include color(#555);
+                    @include margin-left(18px);
+        
+                }
+                a {
+                    @include float(right);
+                    @include font-size(12px);
+                }
+                }
+                ul {
+                    @include rect(1155px, 315px);
+                    @include margin-left(15px);
+                    @include flexbox();
+                    @include justify-content(space-around);
+                    @include align-items();
+                    li {
+                        cursor: pointer;
+                        @include rect(266px, 295px);
+                        img {
+                            @include rect(265px, 254px);
+                            border: 1px solid #f9f9f9;
+                        }
+                        p {
+                            @include margin-top(5px);
+                            @include font-size(12px);
+                            span {
+                                @include float(right);
+                                @include color(red);
+                                @include font-weight(900);
+                            }
+                        }
+                    }
+                }
+           }
+           .wonderful_activities {
+            @include margin-top(30px);
+             @include rect(1190px, 300px);
+             background-color: rgb(250,251,252);
+             h3 {
+             margin-bottom: 0;
+             border-bottom: 2px solid #f3f4f6;
+             @include rect(1155px, 47px);
+             @include line-height(47px);
+             span {
+                 @include text-align();
+                 border-bottom: 2px solid#36ab87;
+                 @include display(inline-block);
+                 @include rect(90px, 47px);
+                 @include font-size(16px);
+                 @include font-weight(bold);
+                 @include color(#555);
+                 @include margin-left(18px);
+        
+             }
+             a {
+                 @include float(right);
+                 @include font-size(12px);
+             }
+             }
+             ul {
+                 @include rect(1160px, 240px);
+                 @include margin-left(15px);
+                 @include flexbox();
+                 @include justify-content(space-around);
+                 @include align-items();
+                 li {
+                     cursor: pointer;
+                     @include rect(380px, 220px);
+                     border:1px solid #c9c9c9;
+                     img {
+                         @include rect(380px, 148px);
+                         border: 1px solid #f9f9f9;
+                     }
+                     p {
+                         @include margin-top(10px);
+                         @include margin-left(10px);
+                         @include color(red);
+                         @include font-weight(600);
+                         @include font-size(16px);
+                         margin-bottom: 0;
+                       }
+                     p:nth-child(3) {
+                         @include margin-left(10px);
+                         @include margin-top(5px);
+                         @include color(black);
+                         @include font-size(12px);
+                         @include font-weight(500);
+                         span {
+                             @include float(right);
+                             @include margin-right(10px);
+                         }
+                     }
+                 }
+             }
+        }
+        }
+}
+.footer {
+    @include rect(100%, 354px);
+    background-color: #3b3f4a;
+    @include margin-top(180px);
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content();
+    @include align-items();
+    .footer_content {
+        @include rect(1190px, 208px);
+        border-bottom: 1px solid #444853;
+        ul {
+            @include flexbox();
+            @include flex-direction();
+            @include rect(900px, 208px);
+            @include align-items();
+            @include float(left);
+            li {
+                @include rect(227px, 150px);
+                border-right: 1px solid #444853;
+                P:nth-child(1) {
+                    @include font-size(18px);
+                    margin-bottom: 10px;
+                    span {
+                        @include margin-left(-40px);
+                        @include rect(40px, 32px);
+                        @include font-size(32px);
+                        @include display(inline-block);
+                    }
+                }
+                p {
+                    @include margin-left(40px);
+                    @include color(#b8bbbbb7);
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .erwei {
+            @include rect(280px ,150px);
+            @include margin-top(20px);
+            @include float(right);
+            ul {
+                @include rect(280px, 150px);
+                @include flexbox();
+                @include flex-direction();
+                li {
+                    border-right: 0;
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include justify-content();
+                    @include align-items();
+                    p {
+                        @include margin-left(0);
+                        @include margin-top(10px);
+                        @include font-size(16px);
+                    }
+                }
+            }
+        }
+    }
+    .footer_footer {
+        @include rect(1190px, 146px);
+        .title {
+            @include rect(100%, 80px);
+            @include text-align();
+            @include margin-top(30px);
+            @include flexbox();
+            @include flex-direction(column);
+            p {
+                margin-bottom: 0;
+                @include color(#b8bbbbb7);
+            }
+        }
+    }
+}
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -5px;
+}
+
+
+.ant-modal-body .shopInFor {
+    @include rect(400px, 135px);
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content(space-around);
+    .imgInFor {
+        @include rect(100px, 135px);
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        @include align-items(space-around);
+        img {
+            @include rect(90px, 90px);
+        }
+        p {
+            @include rect(90px, 30px);
+            @include text-align();
+            @include margin-top(10px);
+            @include font-weight(900);
+        }
+    }
+    .heroInFor {
+        @include rect(150px, 135px);
+        p {
+            span {
+                @include color(red);
+                @include font-size(24px);
+                @include font-weight(900);
+            }
+        }
+        Button {
+            @include rect(120px, 40px);
+            @include font-size(16px);
+            @include font-weight(700);
+        }
+    }
+}
+.ant-modal-content {
+    border: 10px solid grey;
+}

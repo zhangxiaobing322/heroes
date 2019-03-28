@@ -1,0 +1,258 @@
+@import '@/qunar/reset.scss';
+@import '~antd/dist/antd.css';
+
+.margin{
+  width:1190px;
+  // text-align: center;
+  margin: 0 auto;
+ 
+}
+.geren{
+  height:1850px;
+  overflow:auto;
+}
+.a_top{
+  height:.3rem;
+  background:#f9f9f9;
+  text-align: center;
+  .a_top-l{
+  float:left;
+  margin-right:365px;
+  }
+  .a_top-r{
+   float:left;
+   
+  }
+  a{
+    font:12px/30px "";
+    color:#666;
+    
+  }
+  span{
+    color:#eae7ea;
+    width:12px;
+    margin:0 10px;
+  }
+}
+
+.daoju{
+  height:108px;
+  margin-top:20px;
+  background:#fff;
+  .a_left {
+    float:left;
+    width: 320px;
+    height: 65px;
+    background:url(https://js02.daoju.qq.com/common/images/bg.png) no-repeat ;
+    background-position:0 0; 
+  }
+  .a_center{
+    float:left;
+    width: 490px;
+    height:38px;
+    .ant-input{
+      margin-top:20px;
+      // border: #f74a4a;
+    }
+    .ant-btn{
+      margin-top:20px;
+    }    
+  }
+  .a_right{
+    float:left;
+    width: 229px;
+    height: 108px;
+    margin-left:130px;
+  }
+}
+.classification{
+  height:54px;
+  background:#2b2b2c;
+  color:#acb1bb;
+  li{
+    height:54px;
+    float:left;
+    width:130px;
+    line-height: 54px;
+    font-size: 16px;
+    text-align: center;
+    a {
+      color:#acb1bb;
+    }
+  }
+  li:hover{
+    background: #f74a4a;
+    color:#fff;
+  }
+}
+
+.g_gonggao{
+  display:flex;
+  // width:100%;
+  .g_remai{
+    // float:left;
+    padding: 15px 20px 25px 20px;
+    width:20%;
+    height:auto;
+    background:#fff;
+    .g_biaoti{
+      font:20px/60px ""; 
+    }
+    li{
+      display:flex;
+      margin-top: 16px;
+      font-size:12px;
+      
+    .g_left{
+      // float:left; 
+      width:64px;
+      height:53px;
+      img{
+      width:64px;
+      height:53px;
+      }
+    }
+    .g_right{
+      // float:left;
+      height:60px;
+      width:110px;
+      margin-left:20px;
+      .g_lian{
+        width:110px;
+      }
+      .g_mingzi{
+        width:110px;
+        height:12px;
+        // margin:5px 0;
+      }
+      .g_dianjuan{
+        color:red;
+      }
+    }
+  }
+  }
+  .g_xinwen{
+    // float:left;
+    width:80%;
+    background:#fff;
+    padding: 60px 60px 30px 60px;
+    ul{
+      li{
+        display:flex;
+        justify-content: space-between;
+        font-size: 14px;
+        border-bottom: 1px dotted #ddd;
+        height:40px;
+        font:.14rem/.4rem "";
+      }
+    }
+  }
+}
+
+.g_love{
+  height:auto;
+  .g_miss{
+    height:24px;
+    font:20px/24px "";
+    margin-right:30px;
+    .g_huan{
+      font:12px/16px "";
+      color:#1994eb;
+    }
+  }
+ ul{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  li:nth-child(1){
+    border:0;
+  }
+   li{
+    border-left: 1px solid #f3f4f6;
+    padding: 28px 34px;
+    text-align: center;
+     img{
+       height:75px;
+       width:90px;
+     }
+     .g_ming{
+       font:12px/16px "";
+     }
+     .g_dian{
+       color:red;
+     }
+   }
+ }
+}
+
+.a_bottom{
+   height:354px;
+   background-color: #3b3f4a;
+   .a_bottom_content{
+      @include rect(1190px, 208px);
+      border-bottom: 1px solid #444853;
+   }
+  ul{
+    @include flexbox();
+    @include flex-direction();
+    @include rect(900px, 208px);
+    @include align-items();
+    @include float(left);
+    li {
+      @include rect(227px, 150px);
+      border-right: 1px solid #444853;
+      P:nth-child(1) {
+          @include font-size(18px);
+          margin-bottom: 10px;
+          span {
+              @include margin-left(-40px);
+              @include rect(40px, 32px);
+              @include font-size(32px);
+              @include display(inline-block);
+          }
+      }
+      p {
+          @include margin-left(40px);
+          @include color(#b8bbbbb7);
+          margin-bottom: 0;
+      }
+  }
+  }
+  .erwei {
+    @include rect(280px ,150px);
+    @include margin-top(20px);
+    @include float(right);
+    ul {
+        @include rect(280px, 150px);
+        @include flexbox();
+        @include flex-direction();
+        li {
+            border-right: 0;
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content();
+            @include align-items();
+            p {
+                @include margin-left(0);
+                @include margin-top(10px);
+                @include font-size(16px);
+            }
+        }
+    }
+}
+.a_footer_footer {
+  @include rect(1190px, 146px);
+  .a_title {
+      @include rect(100%, 80px);
+      @include text-align();
+      @include margin-top(30px);
+      @include flexbox();
+      @include flex-direction(column);
+      p {
+          margin-bottom: 0;
+          @include color(#b8bbbbb7);
+      }
+  }
+}
+}
+

@@ -1,0 +1,104 @@
+@import '@/qunar/reset.scss';
+
+.footer_z {
+  @include rect(100%, auto);
+  @include background-color(#1b1b1b);
+  @include padding(0.4rem 0 0.2rem 0 );
+  .footer_nav {
+    ul {
+      @include flexbox();
+      @include padding(0 0 0.3rem 0);
+      border-bottom:1px solid #606060;
+      .li_1 {
+        @include flex(2);
+        border-right:1px solid #606060;
+        img {
+          @include margin(0 0 0 10%);
+        }
+      }
+      .li_2 {
+        @include flex(3);
+        @include flexbox();
+        @include flex-flow(wrap);
+        border-right:1px solid #606060;
+        p {
+          @include rect(50%, auto);
+          @include font-size(0.14rem);
+          @include line-height(0.3rem);
+          @include text-align();
+          @include color(#606060);
+          i {
+            float:left;
+            @include rect(0.3rem, 0.3rem);
+            @include margin(0 0 0 0.7rem);
+          }
+        }
+        p:hover {
+          @include color(#fff);
+        }
+        .p1 {
+          i {
+            @include background(url(https://js01.daoju.qq.com/zb/common/images/comm/comm-top.png));
+            @include background-position(0 -60px);
+          }         
+        }
+        .p2 {
+          i {
+            @include background(url(https://js01.daoju.qq.com/zb/common/images/comm/comm-top.png));
+            @include background-position(-30px -60px);
+          }         
+        }
+        .p3 {
+          i {
+            @include background(url(https://js01.daoju.qq.com/zb/common/images/comm/comm-top.png));
+            @include background-position(-60px -60px);
+          }         
+        }
+        .p4 {
+          i {
+            @include background(url(https://js01.daoju.qq.com/zb/common/images/comm/comm-top.png));
+            @include background-position(-90px -60px);
+          }         
+        }
+        .p5 {
+          i {
+            @include background(url(https://js01.daoju.qq.com/zb/common/images/comm/comm-top.png));
+            @include background-position(-120px -60px);
+          }         
+        }
+      }
+      .li_3 {
+        @include flex(4);
+        @include flexbox();
+        div {
+          @include rect(33%, auto);
+          img {
+            @include rect(70%, auto);
+            @include margin(0 0 0 18%);
+          }
+          p {
+            @include font-size(0.16rem);
+            @include line-height(0.5rem);
+            @include text-align();
+            @include color(#fff);
+          }
+        }
+      }
+    }
+  }
+  .footer_f {
+    @include padding(0.2rem 0 0 0);
+    p {
+      @include text-align();
+      @include font-size(0.12rem);
+      @include line-height(0.2rem);
+      @include color(#606060);
+      a {
+        @include color(#606060);
+      }
+      a:hover {
+        @include color(#fff);
+      }
+    }
+  }
+}

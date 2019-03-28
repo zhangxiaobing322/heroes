@@ -1,0 +1,13 @@
+@import '@/qunar/reset.scss';
+.list_list {
+    @include rect(1190px, auto);
+    margin: 0 auto;
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content(space-between);
+    .ant-tabs {
+        @include rect(1190px, auto);
+        .ant-tabs-nav-scroll {
+        }
+    }
+}

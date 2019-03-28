@@ -1,0 +1,180 @@
+@import '@/qunar/reset.scss';
+
+.header_menu {
+    @include rect(100%, 250px);
+    .nav_color {
+        @include color(#9f9f9f);
+        .ant-col-8 li:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+    .header_menu_nav {
+        @include rect(100%, 30px);
+        @include overflow();
+        ul {
+            @include flexbox();
+            @include flex-direction();
+            margin-bottom: 0;
+            li {
+                @include margin-right(10px);
+                @include margin-left(10px);
+                @include text-align();
+                @include font-size(12px);
+                @include line-height(31px);
+                @include color(#9f9f9f);
+            }
+            i {
+                @include display(inline-block);
+                @include line-height(31px);
+                @include font-size(10px);
+            }
+        }
+        .header_menu_right {
+            @include flexbox();
+            @include flex-direction();
+            @include float(right);
+            li {
+                a {
+                    @include color(#9f9f9f);
+                }
+            }
+        }
+    }
+    .header_search {
+        @include rect(100%, 96px);
+        opacity: 0.7;
+        background-color: rgb(60,62,73);
+        ul {
+            margin-bottom: 0;
+            @include rect(100%, 97px);
+            @include flexbox();
+            @include flex-direction();
+            @include justify-content(space-between);
+            @include align-items();
+            @include flexbox();
+            .header_search_logo_1 {
+                @include rect(280px,55px);
+                background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                background-position: -670px -5px;
+            }
+            .header_search_search {
+                @include rect(500px, 51px);
+                .header_search_search_input {
+                    @include rect(450px, 46px);
+                    background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                    background-position: -999px 0;
+                    @include float(left);
+                    input {
+                        @include rect(450px, 46px);
+                        opacity: 0.4;
+                    }
+                }
+                .header_search_search_btn {
+                    @include rect(49px, 46px);
+                    background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                    background-position: -1558px 0;
+                    @include float(right);
+                    button {
+                        z-index: 10;
+                        cursor: pointer;
+                        @include rect(49px,46px);
+                        opacity: 0.2;
+                    }
+                }
+            }
+            .header_search_logo_2 {
+                @include rect(223px,59px);
+                background-image: url(https://js01.daoju.qq.com/common/images/channel/revision/lol/navico.png);
+                background-position: -437px -5px;
+            }
+        }
+    }
+    .header_menu_choose {
+        @include rect(100%, 76px);
+        background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/navico.png) no-repeat;
+        background-position: -5px -187px;
+        ul {
+            @include rect(940px, 76px);
+            @include flexbox();
+            @include float(left);
+            margin-bottom: 0;
+            li {
+                @include flex();
+                @include text-align();
+                @include line-height(76px);
+                @include font-size(18px);
+                @include color(#9f9f9f);
+            }
+            a {
+                @include flex();
+                @include text-align();
+                @include line-height(76px);
+                @include font-size(18px);
+                @include color(#9f9f9f);
+            }
+            li:hover {
+                @include color(red);
+            }
+            a:hover {
+                @include color(red);
+            }
+            .navActive {
+                @include rect(134px,76px);
+                @include color(white);
+                background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/navico.png) no-repeat;
+                background-position: -275px -5px;
+            }
+        }
+        a {
+            .header_menu_cart {
+                @include rect(192px,76px);
+                @include text-align();
+                @include line-height(76px);
+                @include font-size(18px);
+                @include color(red);
+                @include float(right);
+            }
+        }
+    }
+    .header_menu_kind {
+        @include rect(100%, 48px);
+        @include color(#9f9f9f); 
+        @include flexbox();
+        @include flex-direction();
+        @include background-color(#e6e6e8);
+        .header_menu_kind_all {
+            @include rect(152px, 48px);
+            @include line-height(48px);
+            @include text-align();
+        }
+        .header_menu_kind_all:hover {
+            @include color(white);
+        }
+        .header_menu_kind_shop {
+            @include rect(708px, 48px);
+            ul {
+                @include rect(100%, 48px);
+                @include flexbox();
+                @include flex-direction();
+                li {
+                    @include flex();
+                    @include text-align();
+                    @include line-height(48px);
+                    a {
+                        @include color(#9f9f9f);
+                    }
+
+                }
+                li:hover {
+                    @include color(white);
+                }
+            }
+        }
+    }
+    .navigation {
+        @include margin-top(15px);
+        @include font-size(12px);
+        @include rect(1190px, 18px);
+        @include background-color(white);
+    }
+}

@@ -1,0 +1,20 @@
+@import '@/qunar/reset.scss';
+body {
+     overflow:auto !important;
+     padding-right: 16px !important;
+}
+html, body, #root, .box {
+    @include rect(100%, auto);
+    @include background-color(#f5f5f5);
+  }
+  .margin_shop {
+    @include rect(84%, auto);
+    @include margin(0 8%);
+  }
+  .box {
+    @include overflow();
+    position: relative;
+    .content {
+      @include rect(100%, auto);
+    }
+  }

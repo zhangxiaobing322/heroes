@@ -1,0 +1,76 @@
+@import '@/qunar/reset.scss';
+.footer {
+    @include rect(100%, 354px);
+    background-color: #3b3f4a;
+    @include margin-top(50px);
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content();
+    @include align-items();
+    .footer_content {
+        @include rect(1190px, 208px);
+        border-bottom: 1px solid #444853;
+        ul {
+            @include flexbox();
+            @include flex-direction();
+            @include rect(900px, 208px);
+            @include align-items();
+            @include float(left);
+            li {
+                @include rect(227px, 150px);
+                border-right: 1px solid #444853;
+                P:nth-child(1) {
+                    @include font-size(18px);
+                    margin-bottom: 10px;
+                    span {
+                        @include margin-left(-40px);
+                        @include rect(40px, 32px);
+                        @include font-size(32px);
+                        @include display(inline-block);
+                    }
+                }
+                p {
+                    @include margin-left(40px);
+                    @include color(#b8bbbbb7);
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .erwei {
+            @include rect(280px ,150px);
+            @include margin-top(20px);
+            @include float(right);
+            ul {
+                @include rect(280px, 150px);
+                @include flexbox();
+                @include flex-direction();
+                li {
+                    border-right: 0;
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include justify-content();
+                    @include align-items();
+                    p {
+                        @include margin-left(0);
+                        @include margin-top(10px);
+                        @include font-size(16px);
+                    }
+                }
+            }
+        }
+    }
+    .footer_footer {
+        @include rect(1190px, 146px);
+        .title {
+            @include rect(100%, 80px);
+            @include text-align();
+            @include margin-top(30px);
+            @include flexbox();
+            @include flex-direction(column);
+            p {
+                margin-bottom: 0;
+                @include color(#b8bbbbb7);
+            }
+        }
+    }
+}

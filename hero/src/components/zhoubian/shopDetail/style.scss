@@ -1,0 +1,100 @@
+@import '@/qunar/reset.scss';
+
+.main {
+  @include border-radius(0.1rem);
+}
+.goodDetail {
+  @include rect(92%, auto);
+  @include margin(0 4%);
+  @include flexbox();
+  .left {
+    border:1px solid #e5e5e5;
+    @include margin(0 0.5rem 0 0);
+    @include flex(3);
+    img {
+      @include rect(100%, auto);
+    }
+  }
+  .right {
+    @include flex(4);
+    h3 {
+      @include line-height(0.3rem);
+      @include font-size(0.28rem);
+      @include color(#333);
+    }
+    .pri {
+      @include rect(100%, 0.5rem);
+      @include line-height(0.5rem);
+      @include font-size(0.36rem);
+      @include color(red);
+    }
+    .alr {
+      @include flexbox();
+      @include border(1px 0 1px 0, #e5e5e5, dashed);
+      @include margin(0 0 0.2rem 0);
+      p {
+        @include flex();
+        @include line-height(0.6rem);
+        @include font-size(0.14rem);
+        @include margin(0);
+      }
+    }
+    .gui {
+      @include line-height(0.4rem);
+      @include font-size(0.16rem);
+      p {
+        @include rect(1.0rem, 0.4rem);
+        @include margin(0 0 0.2rem 0);
+        i {
+          float: right;
+          @include rect(0.4rem, 0.4rem);
+          @include border(3px 3px 3px 3px, red, solid);
+          @include line-height(0.4rem);
+          @include font-size(0.12rem);
+          @include text-align();
+        }
+      }
+    }
+    .btn {
+      @include rect(100%, 0.4rem);
+      @include line-height(0.4rem);
+      @include font-size(0.16rem);
+      @include margin(0 0 0.3rem 0);
+      Button {
+        @include background-color(#fff);
+        
+      }
+      input {
+        @include rect(1rem, 0.3rem);
+        @include text-align();
+      }
+    }
+    .cart {
+      Button {
+        @include margin(0 0.2rem 0 0.4rem);
+        @include rect(2rem, 0.5rem);
+        @include background-color(red);
+        @include color(#fff);
+      }
+    }
+  }
+}
+.shouhou {
+  @include rect(92%, auto);
+  @include margin(0.6rem 4%);
+  img {
+    display: block;
+    @include margin(0 auto);
+  } 
+}
+
+.show {
+  .p {
+    i {
+      display: inline-block;
+      @include rect(0.56rem, 0.56rem);
+      @include background(url(https://js01.daoju.qq.com/zb/lol/images/icons.png));
+      @include background-position(200px 200px);
+    }
+  }
+}

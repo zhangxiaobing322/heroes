@@ -1,0 +1,85 @@
+@import '@/qunar/reset.scss';
+
+.order {
+  @include rect(92%, auto);
+  @include margin(2% 4%);
+  .address {
+    h3 {
+      @include rect(100%, 0.5rem);
+      @include line-height(0.5rem);
+      @include font-size(0.18rem);
+      @include background-color(red);
+      @include color(#fff);
+      @include padding(0 0 0 0.1rem); 
+      @include margin(0 0 0.2rem 0);   
+    }
+    .btn_add {
+      @include rect(280px, 160px);
+      @include background(url(https://js01.daoju.qq.com/zb/common/images/dz_bg_on.jpg) no-repeat center);
+      @include line-height(0.4rem);
+      @include font-size(0.16rem);
+      @include padding(0 0 0 0.1rem);
+    }
+  }
+  .orderGood {
+    @include rect(100%, auto);
+    h3 {
+      @include rect(100%, 0.5rem);
+      @include line-height(0.5rem);
+      @include font-size(0.18rem);
+      @include background-color(red);
+      @include color(#fff);
+      @include padding(0 0 0 0.1rem);
+      @include margin(0.2rem 0 0.1rem 0);
+    }
+    .cartTop {
+      @include background-color(#fff);
+      @include border(1px 1px 1px 1px, #e5e5e5, solid);
+      li {
+        @include rect(100%, 0.5rem);
+        @include line-height(0.5rem);
+        @include font-size(0.16rem);
+        @include text-align();
+      }
+    }
+    .orderList {
+      @include border(1px 1px 1px 1px, #e5e5e5, solid);
+      @include padding(0.3rem 0.3rem);
+      li {
+        img {
+          @include rect(1.1rem, auto);
+        }
+        @include text-align();
+        @include line-height(1rem);
+      }
+    }
+    .put {
+      @include rect(100%, auto);
+      @include border(1px 1px 1px 1px, #e5e5e5, solid);
+      @include text-align(left);
+      @include padding(0.2rem 0.1rem);
+      input {
+        @include rect(80%, 0.3rem);
+      }
+    }
+  }
+  .tijiao {
+    @include flexbox();
+    @include padding(0.2rem 0.3rem);
+    @include margin(0.5rem 0);
+    .t1 {
+      @include flex(9);
+      @include rect(100%, 0.3rem);
+      @include text-align(right);
+    }
+    .t2 {
+      @include flex(1);
+      @include text-align(right);
+    }
+    p {
+      @include text-align(right);
+      @include rect(100%, 0.3rem);
+      @include font-size(0.16rem);
+    }
+  }
+}

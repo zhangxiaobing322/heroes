@@ -1,0 +1,427 @@
+@import '@/qunar/reset.scss';
+
+.list_all {
+    @include rect(1190px, auto);
+    @include background-color(white);
+    @include margin-top(10px);
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content(space-between);
+    .left {
+       @include rect(228px, auto);
+       .hot_range {
+        @include rect(228px, auto);
+        background-color: rgb(250,251,252);
+        h3 {
+            margin-bottom: 0;
+            border-bottom: 2px solid #f3f4f6;
+            @include rect(220px, 47px);
+            @include line-height(47px);
+            span {
+                @include text-align();
+                border-bottom: 2px solid#36ab87;
+                @include display(inline-block);
+                @include rect(80px, 47px);
+                @include font-size(16px);
+                @include font-weight(bold);
+                @include color(#555);
+                @include margin-left(18px);
+
+            }
+        }
+        ul {
+            @include rect(196x, auto);
+            @include margin-left(18px);
+            a {
+                @include color(black);
+                li {
+                    border-bottom: 1px dashed #e7e7e7;
+                    @include rect(196px, 90px);
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    @include align-items();
+                    cursor: pointer;
+                    img {
+                        @include rect(76px, 54px);
+                    }
+                    .imginfo {
+                        @include rect(108px, 73px);
+                        @include font-size(12px);
+                        p:nth-child(1) {
+                            @include margin-top(5px);
+                            @include rect(108px, 14px);
+                            @include font-weight(900);
+                        }
+                        p:nth-child(2) {
+                            @include rect(108px, 15px);
+                            margin-bottom: 0;
+                        }
+                        p:nth-child(3) {
+                            @include rect(108px, 33px);
+                            span {
+                                @include font-weight(900);
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    p:nth-child(1) {
+                        @include color(#36ab87);
+                    }
+                    p:nth-child(3) {
+                        @include color(red);
+                    }
+                }
+            }
+        }
+        }
+        .detail_zhou {
+            @include rect(228px, 870px);
+            background-color: rgb(250,251,252);
+            h3 {
+                margin-bottom: 0;
+                border-bottom: 2px solid #f3f4f6;
+                @include rect(220px, 47px);
+                @include line-height(47px);
+                span {
+                    @include text-align();
+                    border-bottom: 2px solid#36ab87;
+                    @include display(inline-block);
+                    @include rect(80px, 47px);
+                    @include font-size(16px);
+                    @include font-weight(bold);
+                    @include color(#555);
+                    @include margin-left(18px);
+
+                }
+            }
+            ul {
+                @include rect(192px, 800px);
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items();
+                @include margin-left(18px);
+                @include justify-content(space-around);
+                a {
+                    @include color(black);
+                    li {
+                        @include rect(192px, 260px);
+                        border-bottom: 1px dashed #e7e7e7;
+                        img {
+                            @include rect(192px, 184px);
+                            @include display(block);
+                        }
+                        p {
+                            margin-bottom: 0;
+                        }
+                        p:nth-child(3) {
+                            @include color(red);
+                            @include font-weight(700);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        @include rect(952px, auto);
+        .right_nav {
+            @include rect(952px, 106px);
+            @include background-color(#ededed);
+            .search {
+                @include rect(932px, 48px);
+                @include line-height(48px);
+                @include margin-left(20px);
+                input {
+                    @include rect(344px, 26px);
+                    @include margin-left(5px);
+                    border: 0px;
+                }
+                span {
+                    @include margin-left(30px);
+                    input {
+                        @include rect(40px, 26px);
+                    }
+                    button {
+                        @include rect(40px, 26px);
+                        @include margin-left(20px);
+                        position: absolute;
+                        margin-top: 10px;
+                        @include line-height(10px);
+                    }
+                }
+            }
+            .sort {
+                @include rect(932px, 48px);
+                @include line-height(48px);
+                @include font-weight(700);
+                ul {
+                    @include rect(400px, 48px);
+                    @include flexbox();
+                    @include flex-direction();
+                    @include justify-content(space-around);
+                    li:hover {
+                        cursor: pointer;
+                        @include color(red);
+                    }
+                }
+            }
+        }
+        .hot_box {
+            @include margin-top(10px);
+            @include rect(1190px, auto);
+            @include flexbox();
+            @include justify-content(space-between);
+            .hot_box_list {
+                background-color: rgb(250,251,252);
+                @include rect(952px, auto);
+                h3 {
+                 margin-bottom: 0;
+                 border-bottom: 2px solid #f3f4f6;
+                 @include rect(930px, 47px);
+                 @include font-size(16px);
+                 @include font-weight(bold);
+                 @include color(#b8b8b8);
+                 @include margin-left(18px);
+                 @include line-height(47px);
+                 div:nth-child(1) {
+                     @include rect(93px, 47px);
+                     @include font-size(18px);
+                     @include font-weight(bold);
+                     @include float(left);
+                     text-decoration: none;
+                     
+                     @include text-align();
+                 }
+                 div:nth-child(2) {
+                     @include rect(93px, 47px);
+                     @include font-size(18px);
+                     @include font-weight(bold);
+                     @include float(left);
+                     text-decoration: none;
+                     @include text-align();
+     
+                 }
+                 .like_active {
+                     border-bottom: 2px solid#36ab87;
+                     @include color(black);
+                 }
+                 a:nth-child(3) {
+                     @include float(right);
+                     @include font-size(12px);
+                 }
+             }
+             ul {
+                 @include text-align();
+                 @include margin-top(30px);
+                 @include rect(934px, auto);
+                 @include flexbox();
+                 @include flex-wrap(wrap);
+                 @include justify-content(space-around);
+                    li {
+                        cursor: pointer;
+                        background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat;
+                        background-position: -237px -6px;
+                        @include rect(202px, 370px);
+                       .goods_detail {
+                        @include flexbox();
+                        @include flex-direction(column);
+                        @include justify-content(space-around);
+                        @include align-items();
+                        @include margin-top(20px);
+                        @include rect(202px, 340px);
+                           a {
+                            img {
+                               width: 140px;
+                               height: 180px;
+                                @include margin-top(10px);
+                            }
+                           }
+                        div:nth-child(2) {
+                            @include rect(200px, 20px);
+                        }
+                        .dis_list {
+                            @include rect(202px, 17px);
+                            span {
+                                @include color(red);
+                                @include font-weight(bold);
+                                @include font-size(12px);
+                            }
+                        }
+                        div:nth-child(5) {
+                            @include rect(124px, 32px);
+                            background-color: rgb(54,171,135);
+                            margin-bottom: 10px;
+                            @include color(white);
+                            @include line-height(32px);
+                        }
+                       }
+                    }
+                    li:hover {
+                        background-position: -237px -385px;
+                    }
+             }
+            }
+            .hot_box_plate {
+             @include flexbox();
+             @include flex-direction(column);
+             @include justify-content(space-around);
+             @include rect(228px, 842px);
+             .hot_range {
+                 @include rect(228px, 415px);
+                 background-color: rgb(250,251,252);
+                 h3 {
+                     margin-bottom: 0;
+                     border-bottom: 2px solid #f3f4f6;
+                     @include rect(1155px, 47px);
+                     @include line-height(47px);
+                     span {
+                         @include text-align();
+                         border-bottom: 2px solid#36ab87;
+                         @include display(inline-block);
+                         @include rect(80px, 47px);
+                         @include font-size(16px);
+                         @include font-weight(bold);
+                         @include color(#555);
+                         @include margin-left(18px);
+     
+                     }
+                 }
+                 ul {
+                     @include rect(196x, 359px);
+                     @include margin-left(18px);
+                     li {
+                         @include rect(196px, 90px);
+                         @include flexbox();
+                         @include justify-content(space-between);
+                         @include align-items();
+                         cursor: pointer;
+                         img {
+                             @include rect(76px, 54px);
+                         }
+                         .imginfo {
+                             @include rect(108px, 73px);
+                             @include font-size(12px);
+                             p:nth-child(1) {
+                                 @include margin-top(5px);
+                                 @include rect(108px, 14px);
+                                 @include font-weight(900);
+                             }
+                             p:nth-child(2) {
+                                 @include rect(108px, 15px);
+                                 margin-bottom: 0;
+                             }
+                             p:nth-child(3) {
+                                 @include rect(108px, 33px);
+                                 span {
+                                     @include font-weight(900);
+                                 }
+                             }
+                         }
+                     }
+                     li:hover{
+                         p:nth-child(1) {
+                             @include color(#36ab87);
+                         }
+                         p:nth-child(3) {
+                             @include color(red);
+                         }
+                     }
+                 }
+             }
+         }
+        }
+        .ant-pagination {
+            @include margin-top(50px);
+            @include margin-left(150px);
+        }
+        .detail_zhou {
+            @include rect(952px, 216px);
+            background-color: rgb(250,251,252);
+            @include margin-top(50px);
+            h3 {
+                margin-bottom: 0;
+                border-bottom: 2px solid #f3f4f6;
+                @include rect(220px, 47px);
+                @include line-height(47px);
+                span {
+                    @include text-align();
+                    border-bottom: 2px solid#36ab87;
+                    @include display(inline-block);
+                    @include rect(80px, 47px);
+                    @include font-size(16px);
+                    @include font-weight(bold);
+                    @include color(#555);
+                    @include margin-left(18px);
+
+                }
+            }
+            ul {
+                @include flexbox();
+                @include flex-direction();
+                @include align-items();
+                @include justify-content(space-around);
+                li {
+                    @include rect(176px, 166px);
+                    border-right: 1px dashed #e7e7e7;
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items();
+                    @include justify-content();
+                    img {
+                        @include rect(192px, 184px);
+                        @include display(block);
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                    p:nth-child(3) {
+                        @include color(red);
+                        @include font-weight(700);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-modal-body .shopInFor {
+    @include rect(400px, 135px);
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content(space-around);
+    .imgInFor {
+        @include rect(100px, 135px);
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        @include align-items(space-around);
+        img {
+            @include rect(90px, 90px);
+        }
+        p {
+            @include rect(90px, 30px);
+            @include text-align();
+            @include margin-top(10px);
+            @include font-weight(900);
+        }
+    }
+    .heroInFor {
+        @include rect(150px, 135px);
+        p {
+            span {
+                @include color(red);
+                @include font-size(24px);
+                @include font-weight(900);
+            }
+        }
+        Button {
+            @include rect(120px, 40px);
+            @include font-size(16px);
+            @include font-weight(700);
+        }
+    }
+}
+.ant-modal-content {
+    border: 10px solid grey;
+}

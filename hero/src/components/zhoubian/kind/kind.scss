@@ -1,0 +1,43 @@
+@import '@/qunar/reset.scss';
+.main {
+  @include border-radius(0.1rem);
+}
+.goods {
+  @include rect(92%, auto);
+  @include margin(0 4%);
+  .clearfix {
+    @include flexbox();
+    h3 {
+      @include line-height(0.64rem);
+      @include font-size(0.28rem);
+    }
+    span {
+      @include font-size(0.16rem);
+      @include line-height(0.16rem);
+      @include margin(0.3rem 8.4rem 0 0.3rem);
+    }
+    .a {
+      @include font-size(0.16rem);
+      @include line-height(0.3rem);
+      @include color(#333);
+      @include margin(0.3rem 0 0 0);
+      i {
+        display: inline-block;
+        @include rect(0.2rem, 0.2rem);
+        @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+        @include background-position(-42px -2px);
+        @include margin(0.1rem 0 0 0.05rem);
+      }
+    }
+  }
+  .list {
+    @include flexbox();
+    @include rect(100%, auto);
+    @include margin(0.3rem 0 0.3rem 0);
+    @include background-color(#fff);
+    a {
+      @include margin(0.2rem 1%);
+      
+    }
+  }
+}

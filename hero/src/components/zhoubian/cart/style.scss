@@ -1,0 +1,44 @@
+@import '@/qunar/reset.scss';
+
+.cartgoods {
+  @include rect(92%, auto);
+  @include margin(0 4%);
+  .cartTop {
+    @include flexbox();
+    @include background-color(#fff);
+    @include rect(100%, 0.6rem);
+    li {
+      @include text-align();
+      @include line-height(0.6rem);
+      @include font-size(0.16rem);
+    }
+  }
+ 
+  
+}
+.put {
+  @include text-align();
+}
+.G_Checked,.goodName,.G_text {
+  @include line-height(0.95rem);
+  @include text-align();
+}
+.G_Checkbox {
+    @include rect(100%, 0.5rem);
+    @include padding(0 0.3rem);
+    @include line-height(0.5rem);
+  }
+  .G_Price {
+    @include line-height(0.3rem);
+  }
+
+.re {
+  @include rect(100%, 0.5rem);
+  @include line-height(0.5rem);
+  @include margin(0.5rem 0);
+  h3 {
+    @include rect(100%, 0.5rem);
+    @include text-align();
+    @include font-size(0.18rem);
+  }
+}

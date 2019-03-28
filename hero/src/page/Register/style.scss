@@ -1,0 +1,97 @@
+@import '@/qunar/reset.scss';
+@import '~antd/dist/antd.css';
+
+.r_content{
+    width:1352px;
+    height:656px;
+    
+  .r_tupian{
+    float: left;
+    width:480px;
+    height: 656px;
+    margin-right:190px;
+    img{
+        width:480px;
+        height: 656px;
+         
+    }
+  }
+  .r_margin{
+    float: left;
+    width:480px;
+    height: 656px;
+    // background:#f99;
+    ul{
+      height:34px;
+      margin-top:20px;
+      li{
+        float:left;
+        height:34px;
+        width:100px;
+        font:18px/34px "";
+        color:#666;
+        margin:0 10px;
+        position: relative;
+        .qq{
+          width:100px;
+          height:24px;
+          background:#ff724d;
+          color:#fff;
+          font:18px/34px "";
+        }
+        img{
+          position: absolute;
+          left:-19px;
+          top:-5px;
+        }
+      }
+    }
+    h2{
+      font:44px/50px "";
+      margin-top:50px;
+    }
+    .r_top{
+        height:67px;
+        margin-top:30px;
+        h3{
+            display: inline-block;
+            font:27px/30px "";
+        }
+    }
+    input{
+      width:400px;
+      height:40px;
+    }
+    #register_phone{
+      width:300px;
+    }
+    #register_captcha{
+      width:200px;
+      height:50px;
+      margin-right:10px;
+    }
+    #register_phone{
+      width:300px;
+    }
+    .ant-btn {
+      margin-top:0;
+      margin-bottom:0;
+      width:260px;
+      height:50px;
+      background:#359eff;
+      color:#fff;
+    }
+    .ant-col-12{
+      width:140px;
+    }
+    .ant-btn-primary{
+      width:400px;
+      margin-top:20px;
+      margin-bottom:20px;
+      height:50px;
+    }
+    .ant-checkbox-input{
+      width:0;
+    }
+  }
+}

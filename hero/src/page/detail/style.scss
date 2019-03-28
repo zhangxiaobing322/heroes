@@ -1,0 +1,13 @@
+@import '@/qunar/reset.scss';
+.detailer {
+    @include rect(100%, auto);
+    background: url(//js01.daoju.qq.com/mall/images/channelmall/lol/bg-head.jpg) no-repeat top center;
+    .detail {
+        @include rect(1190px, auto);
+        margin: 0 auto;
+    }
+    .detail_content {
+        @include rect(100%, auto);
+        @include background-color(#f3f4f6);
+    }
+}

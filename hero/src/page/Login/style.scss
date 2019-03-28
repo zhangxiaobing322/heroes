@@ -1,0 +1,72 @@
+@import '@/qunar/reset.scss';
+
+html,body{
+  @include flex();
+  @include rect(auto, 100%);
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+}
+input.ant-input{
+  @include rect(272px, 42px);
+  display: block;
+  margin: 20px auto;
+}
+ .content{
+  @include rect(622px, 368px);
+  box-sizing:border-box;
+  border: 1px solid #cccccc;
+  margin: 100px auto;
+}
+h3{
+  margin-top: 20px!important;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 16px;
+  z-index: 1;
+}
+.cha{
+  width: 47px;
+  height: 20px;
+  float: right;
+  background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) -221px -126px no-repeat;
+  _background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_8.png) -221px -126px no-repeat;
+  outline: 0;
+}
+.tips{
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+button.ant-btn{
+  @include rect(272px, 42px);
+  display: block;
+  margin: 0 auto;
+  line-height: 35px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+  color: #fff;
+  background: 0 0;
+  cursor: pointer;
+}
+.sbox{
+  @include flex();
+  @include justify-content(flex-end);
+  height: 20px;
+  width: 100%;
+  text-align: right;
+  margin-top:60px; 
+}
+span{
+  font-size: 12px;
+}
+.span2{
+  margin:0 5px;
+  color: #ccc;
+}
+.span3{
+  margin-right: 10px;
+}

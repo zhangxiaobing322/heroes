@@ -1,0 +1,47 @@
+@import '@/qunar/reset.scss';
+
+.flex {
+  position: fixed;
+  z-index: 10;
+  top:50%;
+  left:95%;
+  @include background-color(#fff);
+  li {
+    @include rect(0.5rem, 0.5rem);
+    border:1px solid #f5f5f5;
+    div {
+      @include rect(0.22rem, 0.22rem);
+      @include margin(0.14rem);
+    }
+  }
+  .li1 {
+    div {
+      @include background(url(https://js01.daoju.qq.com/zb/lol/images/icons.png));
+      @include background-position(-30px -290px);
+    }
+  }
+  .li2 {
+    div {
+      @include background(url(https://js01.daoju.qq.com/zb/lol/images/icons.png));
+      @include background-position(-56px -290px);
+    }
+  }
+  .li3 {
+    div {
+      @include background(url(https://js01.daoju.qq.com/zb/lol/images/icons.png));
+      @include background-position(-80px -290px);
+    }
+  }
+  .li4 {
+    div {
+      @include background(url(https://js01.daoju.qq.com/zb/lol/images/icons.png));
+      @include background-position(-136px -290px);
+    }
+  }
+  .li5 {
+      @include text-align();
+      @include background-color(red);
+      @include color(#fff);
+      @include line-height(0.5rem);
+  }
+}

@@ -1,0 +1,65 @@
+@import '@/qunar/reset.scss';
+.main {
+  @include border-radius(0.1rem);
+}
+.goods {
+  @include rect(92%, auto);
+  @include margin(0 4%);
+  .clearfix {
+    @include flexbox();
+    h3 {
+      width: 150px !important;
+      @include line-height(0.64rem);
+      @include font-size(0.28rem);
+    }
+    span {
+      width: 180px;
+      @include font-size(0.16rem);
+      @include line-height(0.16rem);
+      @include margin(0.3rem 7rem 0 0.3rem !important);
+    }
+    .a {
+      @include font-size(0.16rem);
+      @include line-height(0.3rem);
+      @include color(#333);
+      @include margin(0.2rem 0 0 0);
+      i {
+        display: inline-block;
+        @include rect(0.2rem, 0.2rem);
+        @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+        @include background-position(-42px -2px);
+        @include margin(0.1rem 0 0 0.05rem);
+      }
+    }
+  }
+  .list {
+    @include flexbox();
+    @include rect(100%, auto);
+    @include margin(0.3rem 0 0.3rem 0);
+    li {
+      @include rect(23%, 3.5rem);
+      @include margin(0 1%);
+      transition:all .2s linear;
+      border:1px solid #eee;
+      img {
+        @include rect(100%, auto);
+        @include margin(0 0 0.2rem 0);
+      }
+      .goods_name {
+        @include line-height(0.3rem);
+        @include font-size(0.14rem);
+        @include text-align();
+      }
+      .goods_price {
+        @include line-height(0.3rem);
+        @include font-size(0.14rem);
+        @include text-align();
+        @include color(red);
+      }
+    }
+    li:hover {
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      transform: translate3d(0, -2px, 0);
+    }
+  }
+}

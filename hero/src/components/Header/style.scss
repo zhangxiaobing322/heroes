@@ -1,0 +1,62 @@
+
+
+.margin{width: 1190px;margin: 0 auto;}
+#root{width: 100%;height: 100%;}
+.contenter{width: 100%;height: 100%;}
+.hd-shang{
+    height: 30px;
+    background-color: #f9f9f9;font: 12px/30px "";
+}
+.hd-tou{float: left;height: 30px;margin-bottom: 0;}
+.hd-tou li{float: left;height: 30px;margin: 0 6px;}
+.hd-tou li i{margin-left:10px;}
+
+.header-right{ float: right;height:30px;margin-bottom:0;}
+.header-right li{ float: left;height:30px;margin: 0 6px;}
+.header-right li i{margin-left:10px;}
+
+.hd-tou .tubiao {
+    width: 11px;
+    height: 16px;
+    margin-top:8px; 
+    background: url(//js02.daoju.qq.com/common/images/icon.png) no-repeat;
+}
+
+.header_search{width: 100%;height: 108px;background:#fff}
+.header_search .logo{width: 320px;height: 65px;margin-top: 10px;display:block;float: left;
+    background:url(https://js02.daoju.qq.com/common/images/bg.png) no-repeat;
+}
+.header_search .xuanzhe{width: 116px;height: 34px;display: block;float: left;
+    border-right:1px solid #ccc;text-align: center;font: 12px/34px "";}
+.header_search .search{
+    width: 490px;height: 40px;border:2px solid red;float: left;margin: 10px 0 0 100px;
+}
+.header_search .search input{float: left;width: 332px;height: 36px;border: 0;}
+.header_search .search .search-fu{float: right;display:block;width: 38px;height: 38px;background:url(https://js02.daoju.qq.com/common/images/btn.png) no-repeat;}
+
+.header_search .user{width:260px;height: 108px;background:url(https://js01.daoju.qq.com/common/images/mall/codeznq.png) no-repeat;
+    float: right;
+}
+.header_choose{
+    width: 100%;height: 54px;background-color: #000;
+}
+.header_choose .fenlei{float: left;margin-left: 100px;}
+.header_choose .fenlei a{display:block;width: 180px;height: 54px;color: #acb1bb;
+    font: 16px/54px 'Microsoft Yahei','黑体';text-align: center;margin-left: 40px;}    
+.header_choose .fenlei:hover a{background-color: red;}  
+
+.header_choose ul{height: 54px;margin-bottom: 0;float: left;}
+.header_choose ul li{float: left;color: #acb1bb;width: 120px;height: 54px;text-align: center;
+    font: 16px/54px 'Microsoft Yahei','黑体';}
+.header_choose ul li a{color:#acb1bb;}
+.header_choose ul li:hover{background-color: red;}
+
+.header-cart{float: left;width: 200px;height: 54px;font: 16px/54px 'Microsoft Yahei','黑体';color: #acb1bb;}
+.header-cart:hover{background-color: red;}
+.header-cart i{margin: 0 20px 0 35px;}
+.header-cart .sp{width:25px;height:16px;display:inline-block;background: url(//js02.daoju.qq.com/common/images/icon.png) no-repeat;
+    background-position: -60px -20px;margin-left: 10px;vertical-align: middle;
+}
+
+.geren{height: 40px;font: 14px/40px "";}
+

@@ -1,0 +1,244 @@
+@import '@/qunar/reset.scss';
+
+.detail_list {
+    @include rect(1190px, 1210px);
+    margin: 0 auto;
+    @include margin-top(40px);
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content(space-between);
+    .detail_left {
+        @include rect(228px, 1195px);
+        @include flexbox();
+        @include flex-direction(column);
+
+        .hot_range {
+            @include rect(228px, 326px);
+            background-color: rgb(250,251,252);
+            h3 {
+                margin-bottom: 0;
+                border-bottom: 2px solid #f3f4f6;
+                @include rect(220px, 47px);
+                @include line-height(47px);
+                span {
+                    @include text-align();
+                    border-bottom: 2px solid#36ab87;
+                    @include display(inline-block);
+                    @include rect(80px, 47px);
+                    @include font-size(16px);
+                    @include font-weight(bold);
+                    @include color(#555);
+                    @include margin-left(18px);
+
+                }
+            }
+            ul {
+                @include rect(196x, 277px);
+                @include margin-left(18px);
+                li {
+                    border-bottom: 1px dashed #e7e7e7;
+                    @include rect(196px, 90px);
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    @include align-items();
+                    cursor: pointer;
+                    img {
+                        @include rect(76px, 54px);
+                    }
+                    .imginfo {
+                        @include rect(108px, 73px);
+                        @include font-size(12px);
+                        p:nth-child(1) {
+                            @include margin-top(5px);
+                            @include rect(108px, 14px);
+                            @include font-weight(900);
+                        }
+                        p:nth-child(2) {
+                            @include rect(108px, 15px);
+                            margin-bottom: 0;
+                        }
+                        p:nth-child(3) {
+                            @include rect(108px, 33px);
+                            span {
+                                @include font-weight(900);
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    p:nth-child(1) {
+                        @include color(#36ab87);
+                    }
+                    p:nth-child(3) {
+                        @include color(red);
+                    }
+                }
+            }
+        }
+        .detail_zhou {
+            @include rect(228px, 870px);
+            background-color: rgb(250,251,252);
+            h3 {
+                margin-bottom: 0;
+                border-bottom: 2px solid #f3f4f6;
+                @include rect(220px, 47px);
+                @include line-height(47px);
+                span {
+                    @include text-align();
+                    border-bottom: 2px solid#36ab87;
+                    @include display(inline-block);
+                    @include rect(80px, 47px);
+                    @include font-size(16px);
+                    @include font-weight(bold);
+                    @include color(#555);
+                    @include margin-left(18px);
+
+                }
+            }
+            ul {
+                @include rect(192px, 800px);
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items();
+                @include margin-left(18px);
+                @include justify-content(space-around);
+                li {
+                    @include rect(192px, 260px);
+                    border-bottom: 1px dashed #e7e7e7;
+                    img {
+                        @include rect(192px, 184px);
+                        @include display(block);
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                    p:nth-child(3) {
+                        @include color(red);
+                        @include font-weight(700);
+                    }
+                }
+            }
+        }
+    }
+    .detail_detail {
+        @include rect(952px, 560px);
+        background-color: rgb(250,251,252);
+        .detail_shop {
+            @include rect(952px, 360px);
+            @include flexbox();
+            @include flex-direction();
+            @include justify-content(space-around);
+            @include align-items();
+            .img_show {
+                @include rect(260px, 180px);
+                @include margin-left(80px);
+                a {
+                    @include margin-top(5px);
+                    @include rect(100px, 25px);
+                    @include display(inline-block);
+                    @include margin-left(90px);
+                    @include color(#9f9f9f);
+                }
+                .xing {
+                    background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                    background-position: -5px -521px;
+                    text-indent: 19px;
+                }
+                .right {
+                    @include float(right);
+                }
+                img {
+                    width: 240px;
+                    @include display(block);
+                }
+            }
+            .goods_buy {
+                @include margin-right(80px);
+                @include rect(456px, 221px);
+                span {
+                    @include font-size(18px);
+                    @include font-weight(900);
+                }
+                .comic {
+                    @include margin-top(5px);
+                    @include rect(456px, 76px);
+                    background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                    background-position: -5px -143px;
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include justify-content();
+                    ul {
+                        @include rect(200px, 60px);
+                        @include margin-top(10px);
+                        li {
+                            @include margin-top(5px);
+                            span {
+                                @include color(red);
+                            }
+                        }
+                    }
+                }
+                p {
+                    @include margin-top(10px);
+                }
+                .btn_buy {
+                    @include rect(70%, 42px);
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    button {
+                        @include rect(142px, 42px);
+                    }
+                }
+            }
+        }
+        .detail_info {
+            @include margin-top(30px);
+            @include margin-left(20px);
+            @include rect(912px, 100px);
+            border: 1px solid #c9c9c9;
+            .headerteng {
+                @include rect(100%, 30px);
+                img {
+                    @include rect(166px, 174px);
+                    @include float(right);
+                    @include margin-top(30px);
+                    @include margin-right(-17px);
+                    display: none;
+                }
+                span {
+                    @include display(block);
+                    @include font-size(16px);
+                    @include font-weight(900);
+                    @include float(left);
+                   
+                }
+                i {
+                    @include display(inline-block);
+                    @include rect(45px, 28px); 
+                    @include margin-left(10px);
+                }
+                i:hover img {
+                    @include display(block);
+                }
+                .aa {
+                    background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                    background-position: -5px -347px;
+                }
+                .line {
+                    @include rect(705px, 20px);
+                    background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/comico.png) no-repeat;
+                    background-position: -5px -229px;
+                    @include margin-left(5px);
+                    @include margin-top(0px);
+                    @include float(left);
+                }
+            }
+            p {
+                @include margin-top(20px);
+                @include margin-left(60px);
+                @include font-size(20px);
+            }
+            
+        }
+    }
+}

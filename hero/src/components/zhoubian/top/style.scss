@@ -1,0 +1,144 @@
+@import '@/qunar/reset.scss';
+
+.top {
+  @include rect(100%, 1.55rem);
+  @include background-color(#0e0e0f);
+  .top_logo {
+    @include flexbox();
+    .logo{
+      a {
+        display:block;
+        @include rect(1.71rem, 0.79rem);
+      }
+      @include rect(1.71rem, 0.79rem);
+      @include margin(0.05rem 0.5rem 0 0.1rem);
+      @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+      @include background-position(-190px 1px);
+    }
+    .logo_1 {
+      a {
+        display:block;
+        @include rect(2.3rem, 0.72rem);
+      }
+    @include rect(2.3rem, 0.72rem);
+    @include background(url(https://js01.daoju.qq.com/zb/lol/images/logo-lol.png) no-repeat);
+    @include margin(0.1rem 0 0.19rem 0);
+    }
+    .search {
+      @include margin(0.3rem 0 0 2.3rem);
+      @include flexbox();
+      @include background-color(#242424);
+      @include padding(0.07rem 0.07rem 0 0.2rem);
+      @include border-radius(0.2rem);
+      @include rect(2.5rem, 0.45rem);
+      .t {
+        @include rect(0.17rem, 0.17rem);
+        @include margin(0.04rem 0.05rem 0 0);
+        @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+        @include background-position(-80px 0px);
+      }
+      input {
+        @include rect(2rem, 0.3rem);
+        @include background-color(#242424);
+        border:none;
+      }
+    }
+    .login {
+      @include rect(1.2rem, 0.2rem);
+      @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+      @include color(#fff);
+      @include padding(0 0 0 0.25rem);
+      @include margin(0.45rem 0 0 0.3rem);
+      @include background-position(0px -280px);
+    }
+    .cart {
+      @include flexbox();
+      @include color(#fff);
+      @include margin(0.45rem 0 0 0.3rem);
+      div {
+        @include rect(0.3rem, 0.3rem);
+        @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+        @include background-position(0px -63px);
+      }
+     p {
+      @include rect(0.8rem, 0.2rem);
+      span {
+        @include color(red);
+      }
+     }
+    }
+  }
+  .nav {
+    @include flexbox();
+    position: relative;
+    a {
+      @include rect(1.29rem, 0.56rem);
+      @include text-align();
+      @include line-height(0.56rem);
+      @include color(#a6a698);
+    }
+    a:hover {
+      @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png) no-repeat);
+      @include background-position(-30px -92px);
+      @include color(#fff);
+    }
+    .all:hover {
+      .kind {
+        i {
+          @include background-position(-97px 5px);
+        }
+      }
+      .kind1 {
+        z-index: 5;
+      }
+    }
+    .all {
+      @include rect(2rem, 0.56rem);
+      @include margin(0 0 0 4rem);
+      .kind {
+        @include rect(2rem, 0.56rem);
+        @include font-size(0.16rem);
+        @include text-align();
+        @include line-height(0.56rem);
+        @include color(#fff);
+        i {
+          display: inline-block;
+          @include rect(0.15rem, 0.2rem);
+          @include background(url(https://js01.daoju.qq.com/zb/common/images/ico-comm.png));
+          @include background-position(-63px 5px);
+        }
+      }
+
+      .kind1 {
+        @include flexbox();
+        @include rect(500%, auto);
+        @include background-color(#fff);
+        position: absolute;
+        left:-2rem;
+        z-index: -5;
+        @include padding(0 0 0 40%);
+        ul {
+          @include margin(0.5rem 0.15rem);
+          li {
+            @include rect(auto, 0.3rem);
+            @include font-size(0.14rem);
+            @include line-height(0.3rem);
+            @include text-align();
+            a {
+              display: block;
+              @include rect(auto, 0.3rem);
+              @include font-size(0.16rem);
+              @include line-height(0.3rem);
+              @include text-align();
+            }
+            i {
+              display: block;
+              @include rect(0.3rem, 0.3rem);
+              @include margin(0 auto);
+            }
+          }
+        }
+      }
+    }
+  }
+} 

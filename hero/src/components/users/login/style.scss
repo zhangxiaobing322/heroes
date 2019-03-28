@@ -1,0 +1,33 @@
+@import '@/qunar/reset.scss';
+
+.userbox {
+  @include rect(100%, 100%);
+  position: relative;
+  .img_bg {
+    @include rect(100%, 100%);
+    img {
+      @include rect(100%, 100%);
+    }
+  }
+  .img_center {
+    position: absolute;
+    @include rect(62%, 100%);
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    img {
+      @include rect(100%, 100%);
+    }
+  }
+  .userlogo {
+    position: absolute;
+    top:50px;
+    left:50px;
+    img {
+      @include rect(1.5rem, 100%);
+    }
+  }
+}
